@@ -12,20 +12,27 @@ package beugro20080105;
 public class Hallgato extends Szemely{
     private boolean ferfi;
     float atlag;
+    private static double elvaras = 4;
+        
+    Hallgato() { super(); }
     
     public Hallgato(String n, int e, boolean f, float a){
         super(n,e,f);
         this.atlag = a;
     }
-    
+
+    public void setJoKepessegu(double elvarasBeallit){
+        elvaras = elvarasBeallit;
+    }
+
     public boolean isJoKepessegu(){
-        if(this.atlag >= 4){
+        if(this.atlag >= elvaras){
             return true;
         }else{
             return false;
         }
     }
-    
+        
     public String toString(){
         return this.nev + "\n" + this.eletkor + "\n" + this.ferfi + "\n" + atlag;
     }

@@ -11,15 +11,18 @@ import java.util.*;
  */
 public class Main {
         
-    public static void getAgeOfExcelents(ArrayList<Szemely> inputCollection){
+    public static double getAgeOfExcelents(ArrayList<Szemely> inputCollection){
             double sum = 0;
             int counter = 0;
-            for(int i = 0; i < inputCollection.size(); i++){
-                if(inputCollection.get(i) instanceof Hallgato){
-                    Hallgato TempHallgato = inputCollection.get(i);
-                   sum = inputCollection.get(i).isJoKepessegu() ? sum : sum + inputCollection.get(i).eletkor;
+            for(Szemely E : inputCollection){
+                if(E instanceof Hallgato){
+                   Hallgato TempHallgato = new Hallgato();
+                   TempHallgato = (Hallgato) E;
+                   sum = TempHallgato.isJoKepessegu() ? sum : sum + E.eletkor;
+                   counter++;
                 }
             }
+            return sum / counter;
     }
     
             
@@ -51,7 +54,14 @@ public class Main {
                     holdUserInput[3]);
             }
         }
+        
+        ArrayList<Szemely> SzemelyKollekcio = new ArrayList<Szemely>();
+        for(Szemely Sz : SzemelyTomb){
+            SzemelyKollekcio.add(Sz);
+        }
+        
         System.out.println(monaLiza.toString());
+        System.out.println(getAgeOfExcelents(SzemelyKollekcio));
        
 }}
 

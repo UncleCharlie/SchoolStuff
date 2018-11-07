@@ -13,11 +13,15 @@ public class Szemely implements Comparable<Szemely>{
 	protected int eletkor;
 	private boolean ferfi;
         
+        public Szemely(){};
+        
         public Szemely(String n, int e, boolean f){
             this.nev = n;
             this.eletkor = e;
             this.ferfi = f;
         }
+        
+        
         
         public void setNev(String n){
             this.nev = n;
