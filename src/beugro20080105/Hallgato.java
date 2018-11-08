@@ -11,17 +11,17 @@ package beugro20080105;
  */
 public class Hallgato extends Szemely{
     private boolean ferfi;
-    float atlag;
+    double atlag;
     private static double elvaras = 4;
         
     Hallgato() { super(); }
     
-    public Hallgato(String n, int e, boolean f, float a){
+    public Hallgato(String n, int e, boolean f, double a){
         super(n,e,f);
         this.atlag = a;
     }
 
-    public void setJoKepessegu(double elvarasBeallit){
+    public static void setJoKepessegu(double elvarasBeallit){
         elvaras = elvarasBeallit;
     }
 
