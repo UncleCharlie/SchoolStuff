@@ -18,4 +18,11 @@ public class Emlos extends Allat{
         this.labakSzama = labakSzama;
     }
     
+    public boolean labNyom(){
+        if((this.suly / this.labakSzama) > 10 )
+            return true;
+        else
+            return false;
+    }
+    
 }
