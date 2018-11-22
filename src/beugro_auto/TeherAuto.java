@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package beugro2007121;
+package beugro_auto;
 
 /**
  *

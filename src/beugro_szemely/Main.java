@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package beugro20080105;
+package beugro_szemely;
 import java.util.*;
 /**
  *
