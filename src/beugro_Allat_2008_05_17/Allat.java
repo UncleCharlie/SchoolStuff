@@ -53,19 +53,13 @@ public class Allat implements Comparable<Allat>
     @Override
     public int compareTo(Allat o) {
         
-        if(this.suly < o.suly)
-            return -1;
         if(this.suly > o.suly)
+            return -1;
+        if(this.suly < o.suly)
             return 1;       
         else
             return 0;
     }
 
- 
- 
- 
- 
- 
- 
 }
 

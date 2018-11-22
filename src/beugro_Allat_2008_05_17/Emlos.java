@@ -12,6 +12,7 @@ package beugro_Allat_2008_05_17;
 public class Emlos extends Allat{
     
     int labakSzama;
+    double sulyHatar = 10;
     
     public Emlos(String faj, double kor, double suly, int labakSzama) {
         super(faj, kor, suly);
@@ -19,10 +20,16 @@ public class Emlos extends Allat{
     }
     
     public boolean labNyom(){
-        if((this.suly / this.labakSzama) > 10 )
+        if((this.suly / this.labakSzama) > sulyHatar )
             return true;
         else
             return false;
     }
+
+    public void setSulyHatar(double sulyHatar) {
+        this.sulyHatar = sulyHatar;
+    }
+    
+    
     
 }

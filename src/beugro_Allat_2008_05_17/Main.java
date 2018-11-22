@@ -45,6 +45,9 @@ public static String youngestMammalSandPr(List<Allat> inputList ){
         Allat elefant = new Allat("Elefánt", 3.5, 870);
         Allat[] allatTomb = new Allat[4];
         List<Allat> AllatLista = new ArrayList<Allat>();
+        //declare new Zoo:
+        Allatkert someZoo = new Allatkert();
+        
         
         //get animals:
         for(int i = 0; i < 4; i++){
@@ -69,8 +72,11 @@ public static String youngestMammalSandPr(List<Allat> inputList ){
             }
             
         AllatLista.add(allatTomb[i]);
+        someZoo.addToAllatkert(allatTomb[i]);
         }
-        System.out.println(youngestMammalSandPr(AllatLista));
+        //System.out.println(youngestMammalSandPr(AllatLista));
+    System.out.println("Testing testing testing");
+    someZoo.madarify();
+    someZoo.printThreeLargest();
     }
-    
 }

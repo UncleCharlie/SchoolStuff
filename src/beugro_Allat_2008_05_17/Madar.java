@@ -20,7 +20,7 @@ public class Madar extends Allat{
 
     @Override
     public String toString() {
-        return kor + " éves" + suly + " kg-os " + ropKepes + " " + faj;
+        return kor + " éves " + suly + " kg-os " + ropKepes + " " + faj;
     }
     
     
