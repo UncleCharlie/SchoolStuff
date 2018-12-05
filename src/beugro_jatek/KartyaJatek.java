@@ -14,7 +14,7 @@ public class KartyaJatek extends Tarsasjatek{
     private String paklifajta;
     private int paklimeret;
 
-    public KartyaJatek(String paklifajta, int paklimeret, String nev, int korhatar, int minFo, int maxFo) {
+    public KartyaJatek(String nev, int korhatar, int minFo, int maxFo,String paklifajta, int paklimeret) {
         super(nev, korhatar, minFo, maxFo);
         this.paklifajta = paklifajta;
         this.paklimeret = paklimeret;
