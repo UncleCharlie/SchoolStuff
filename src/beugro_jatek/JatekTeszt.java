@@ -67,7 +67,5 @@ public class JatekTeszt {
         
         for (KartyaJatek T : kivansaglista1.kartyajatekok(paklifajta))
             System.out.println(T.toString());
-        
-        
     }   
 }
