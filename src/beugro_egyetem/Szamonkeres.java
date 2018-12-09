@@ -80,7 +80,5 @@ public abstract class Szamonkeres implements Comparable<Szamonkeres>{
             return this.kezdesi_ido.compareTo(o.kezdesi_ido);
         else
             return this.nev.compareTo(o.nev);    }   
-    
-    
-    
+
 }

@@ -23,7 +23,6 @@ public class JatekTeszt {
     
     }
     
-    
     public static void main(String[] args) throws FileNotFoundException {
         ArrayList<Tarsasjatek> jateklista = new ArrayList<>();
         //6
