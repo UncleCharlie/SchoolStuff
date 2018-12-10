@@ -18,12 +18,10 @@ import java.util.List;
 //5
 public class KivansagLista implements JatekLista{
 
-  
     HashSet<Tarsasjatek> lista = new HashSet<>();
     String tulajdonos;
     Collection<Tarsasjatek> CopyInputCollection = new ArrayList<>();
     
-
     public KivansagLista(String tulajdonos, Collection<Tarsasjatek> lista) {
         this.tulajdonos = tulajdonos;
         this.lista.addAll(lista);
@@ -76,5 +74,17 @@ public class KivansagLista implements JatekLista{
     public void kiir(String fajlnev) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+    //10
+    public ArrayList<String> ennyiFoAltalJatszhato(int fokszama){
+        ArrayList<String> k = new ArrayList<>();
+        for(Tarsasjatek T : lista)
+        {
+            if(T instanceof KartyaJatek && T.minFo <= fokszama && (T.maxFo >= fokszama || T.maxFo == 0)){
+             k.add(T.nev);
+                System.out.println("Bingo");
+            }
+        }
+        
+        return k;
+    }
 }
