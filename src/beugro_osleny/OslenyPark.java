@@ -12,7 +12,7 @@ package beugro_osleny;
 public interface OslenyPark
 {
  // uj oshüllot vesz fel a parkba
- public void felvesz(Oshullo oshüllo);
+ public void felvesz(Oshullo oshullo);
  // visszaadja azoknak a dinoknak a rendezett listajat (a termeszetes rendezettseg
  // sorrendjeben), amelyek testhossza legalabb a parameterben megkapott ertek
 public java.util.List<Dino> nagyDinok(double minHossz);
