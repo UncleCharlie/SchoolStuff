@@ -1,0 +1,6 @@
+H;macskoszaurusz;Szoba;M
+H;kutyaoszaurusz;udvar;M
+D;Delfinoszaurusz;ocean;M;4;5
+D;Horcsogoszaurusz;odu;R;7;8
+D;Tehenoszaurusz;mezo;N;34;67
+H;szaurusz;hely;N
