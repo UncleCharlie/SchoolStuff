@@ -23,8 +23,11 @@ public class Teszt {
         
         tesztTanulnivalok.hozzaad(tesztZh);
         tesztTanulnivalok.hozzaad(tesztVizsga);
-        
+        try{
         System.out.println(tesztTanulnivalok.atlagPontszam());
+        }catch(NincsTesztException nte){
+            System.out.println(nte.getMessage());
+        }
         
         System.out.println(tesztZh.toString());
         System.out.println(tesztVizsga.toString());

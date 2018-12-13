@@ -37,7 +37,7 @@ public class FelevesTesztek implements Tanulnivalok{
     @Override
     public double atlagPontszam () throws NincsTesztException {
         int osszPontszam = 0;
-        try{
+
         if(tanulnivalokLista.isEmpty())
             throw new NincsTesztException();
 
@@ -46,10 +46,7 @@ public class FelevesTesztek implements Tanulnivalok{
             osszPontszam += T.maxPontszam();
         }
         return osszPontszam / tanulnivalokLista.size();
-                }catch(NincsTesztException nte){
-            System.out.println(nte.getMessage());
-            return 0;
-        }
+        
     }
 
     @Override
